@@ -1,0 +1,98 @@
+*,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+}
+
+
+:root{
+    --sarlavhacolor: black;
+    --orange:hsl(35, 77%, 62%);
+    --softred:hsl(5, 85%, 63%);
+    
+}
+
+.logo{
+    font-size: 3rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--sarlavhacolor);
+
+}
+.nav-child{
+    text-decoration: none;
+    color: #928f99;
+    font-size: 1.125rem;
+}
+
+.container{
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.wrapper-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-2{
+    padding: 1rem;
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+}
+
+.section-2 .nav-child{
+    color: #928f99;
+    line-height: 1.1;
+    font-weight: normal;
+}
+.sar-sarlavha{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.secondary-sarlavha{
+    font-size: 2.6rem;
+    color: #e5a247;
+}
+
+.secondary-sarlavha:hover{
+    color: #e5a247;
+}
+.nav-child:hover{
+    color: #e5a247;    
+}
+.sar-sarlavha:hover{
+    color: #e5a247;    
+}
+
+.rasm{
+    width: 100%;
+}
+
+.section-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1rem;
+}
+
+.wrapper-tugma{
+    width: 50%;
+}
+.hero-btn{
+    width: 100%;
+    padding: 10px 30px;
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+}
