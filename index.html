@@ -14,22 +14,38 @@
 
 </head>
 <body>
+  <main class="container">
+    <div id="black"></div>
   <header>
-    <div class="wrapper-header container">
+    <div class="wrapper-header">
       <div class="header-right">
         <a href="#" class="logo">W.</a>
       </div>
-      <nav>
+      <nav id="nav-1">
+        <a href="#" class="nav-child none">Home</a>
+        <a href="#" class="nav-child none">Popular</a>
+        <a href="#" class="nav-child none">Trending</a>
+        <a href="#" class="nav-child none">Categories</a>
+
+        <button class="tugg" id="menu">
+          <svg width="40" height="17" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z"/><path d="M0 0h40v3H0z"/></g></svg>
+        </button>
+      </nav>
+
+      <nav id="nav-2">
         <a href="#" class="nav-child">Home</a>
         <a href="#" class="nav-child">Popular</a>
         <a href="#" class="nav-child">Trending</a>
         <a href="#" class="nav-child">Categories</a>
+
+        <button class="tugg" id="close">
+          <svg width="32" height="31" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z"/><path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z"/></g></svg>        </button>
       </nav>
     </div>
   </header>
 
 
-  <main class="container">
+
 
     <section class="wrapper-img">
       <img src="./assets/images/image-web-3-desktop.jpg" alt="" class="rasm">
@@ -55,6 +71,10 @@
           The Bright Future of Web 3.0?
         </h1>
       </div>
+
+      
+    </section>
+    <section class="section-4">
       <div class="section-right">
         <p class="nav-child">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
           But is it really fulfilling its promise?</p>
@@ -62,8 +82,44 @@
             <button class="hero-btn">READ MORE</button>
           </div>
       </div>
-      
     </section>
+
+    <footer class="container">
+      <div class="footer-child">
+        <div class="footer-left">
+          <img src="./assets/images/image-retro-pcs.jpg" alt="" class="rasm">
+        </div>
+        <div class="footer-right">
+          <h3 class="footer-sarlavha">01</h3>
+          <h4 class="footer-main-sarlavha">Reviving Retro PCs</h4>
+          <p class="nav-child">What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+
+      <div class="footer-child">
+        <div class="footer-left">
+          <img src="./assets/images/image-retro-pcs.jpg" alt="" class="rasm">
+        </div>
+        <div class="footer-right">
+          <h3 class="footer-sarlavha">01</h3>
+          <h4 class="footer-main-sarlavha">Reviving Retro PCs</h4>
+          <p class="nav-child">What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+
+
+      <div class="footer-child">
+        <div class="footer-left">
+          <img src="./assets/images/image-retro-pcs.jpg" alt="" class="rasm">
+        </div>
+        <div class="footer-right">
+          <h3 class="footer-sarlavha">01</h3>
+          <h4 class="footer-main-sarlavha">Reviving Retro PCs</h4>
+          <p class="nav-child">What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+
+    </footer>
     
 
   </main>
@@ -103,6 +159,30 @@
   03
   The Growth of Gaming
   How the pandemic has sparked fresh opportunities. -->
+
+
+  <script>
+    let menuu =document.getElementById("nav-1");
+    let menuuicon =document.getElementById("menu");
+    let closeicon =document.getElementById("close");
+    let menuu2 =document.getElementById("nav-2");
+    let blck =document.getElementById("black");
+
+    menuuicon.addEventListener("click", function(){
+      menuu2.style.display  ="flex";
+      menuuicon.style.display ="none";
+      closeicon.style.display ="block";
+      blck.style.display ="block";
+
+    })
+
+    closeicon.addEventListener("click", function(){
+      closeicon.style.display ="none";
+      menuu2.style.display ="none";
+      menuuicon.style.display ="block";
+      blck.style.display ="none";
+    })
+  </script>
   
 </body>
 </html>
